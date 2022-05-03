@@ -1,0 +1,11 @@
+menu "nRF9160dk balancing robot: nRF9160"
+rsource "drivers/Kconfig"
+endmenu
+
+menu "Zephyr Kernel"
+source "Kconfig.zephyr"
+endmenu
+
+module = APPLICATION_MODULE
+module-str = application
+source "subsys/logging/Kconfig.template.log_config"
